@@ -18,8 +18,8 @@ To get this project up and running locally, follow these steps.
 ### Installation
 1.  **Clone the Repository**:
     ```bash
-    git clone <repository-url>
-    cd api # or whatever your project directory is named
+    git clone https://github.com/Elderusr/HNG-stage1-stringAnalyser.git
+    cd HNG-stage1-stringAnalyser 
     ```
 2.  **Install Dependencies**:
     Navigate into the project directory and install the necessary Node.js packages.
