@@ -180,11 +180,11 @@ const deleteString = (req, res, next) => {
     const hash = computeSHA256(stringValue);
 
     if (!stringStore.has(hash)) {
-        return res.status(404).json({ error: 'String not found in the system' });
+        return res.status(404).json({ error: 'String does nto exist in the system' });
     }
 
     stringStore.delete(hash);
-    return res.status(200).json({ message: 'String deleted', id: hash });
+    return res.status(200).send();
 };
 
 module.exports =  {createString, getString, getFiltered, deleteString};

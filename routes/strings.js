@@ -4,7 +4,7 @@ const nlpQuery = require('../middleware/nlpParser');
 const router = express.Router();
 
 router.get('/strings', getFiltered);
-router.get('/strings/nlp', (req, res, next) => {
+router.get('/strings/filter-by-natural-language', (req, res, next) => {
     const { query } = req.query;
     console.log('we are hitting this endpoint')
     if(!query || typeof query !== 'string') {
