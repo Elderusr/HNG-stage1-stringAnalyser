@@ -180,7 +180,7 @@ const deleteString = (req, res, next) => {
     const hash = computeSHA256(stringValue);
 
     if (!stringStore.has(hash)) {
-        return res.status(404).json({ error: 'String does nto exist in the system' });
+        return res.status(404).json({ error: 'String does not exist in the system' });
     }
 
     stringStore.delete(hash);
